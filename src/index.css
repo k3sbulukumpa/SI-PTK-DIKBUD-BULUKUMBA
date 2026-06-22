@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+/* Custom styling to make the datepicker calendar icon visible and appealing in Dark mode */
+input[type="date"] {
+  position: relative;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(0.6) sepia(1) saturate(10) hue-rotate(10deg) brightness(1.2); /* Beautiful matching orange tint */
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 6px;
+  transition: all 0.15s ease-in-out;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator:hover {
+  filter: invert(0.7) sepia(1) saturate(15) hue-rotate(10deg) brightness(1.5);
+  background-color: rgba(242, 92, 5, 0.15);
+}
+

@@ -1,0 +1,8 @@
+{
+  "name": "Remix: TEST SI PTK DIKBUD",
+  "description": "Sistem Informasi Pendidik dan Tenaga Kependidikan Dinas Pendidikan dan Kebudayaan Kabupaten Bulukumba dengan database Supabase",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
